@@ -1,0 +1,1 @@
+require 'kandinsky/color.rb'
