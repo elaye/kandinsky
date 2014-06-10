@@ -7,7 +7,9 @@ Gem::Specification.new do |s|
   s.authors     = ["Elie Génard"]
   s.email       = 'nick@quaran.to'
   s.files       = ["lib/kandinsky.rb",
-                  "lib/kandinsky/color.rb"]
+                  "lib/kandinsky/color.rb",
+                  "lib/kandinsky/pixel.rb",
+                  "lib/kandinsky/image.rb"]
   s.executables << 'kandinsky'
   s.homepage    = 'http://rubygems.org/gems/kandinsky'
   s.license     = 'MIT'

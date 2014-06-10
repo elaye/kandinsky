@@ -40,7 +40,7 @@ class Color
 		([@r, @g, @b].max.to_f / 255 * 100).to_i
 	end
 
-	def to_str
+	def to_s
 		"[#{@r}, #{@g}, #{@b}]"
 	end
 
