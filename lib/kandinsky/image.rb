@@ -11,9 +11,14 @@ class Image
 		puts "#{@image[0].size}x#{@image.size}"
 	end
 
-	def draw(p, brush)
+	def apply(p, brush)
+		# !! Effets de bord
+		# for i in ([p.y - (brush.size - brush.anchor.y),0].max, [p.y + (brush.size - brush.anchor.y), @image.size].max)
 		# @image[p.x][p.y] = Pixel.new(brush.color)
 		@image[p.x][p.y] = Pixel.new(Color.new(0,255,0))
+			
+		# end
+
 	end
 
 	def save(fn)
