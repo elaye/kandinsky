@@ -9,6 +9,9 @@ Gem::Specification.new do |s|
   s.files       = ["lib/kandinsky.rb",
                   "lib/kandinsky/color.rb",
                   "lib/kandinsky/pixel.rb",
+                  "lib/kandinsky/brush.rb",
+                  "lib/kandinsky/point.rb",
+                  "lib/kandinsky/path.rb",
                   "lib/kandinsky/image.rb"]
   s.executables << 'kandinsky'
   s.homepage    = 'http://rubygems.org/gems/kandinsky'

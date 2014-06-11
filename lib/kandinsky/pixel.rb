@@ -4,8 +4,12 @@ class Pixel
 
 	@color
 
-	def initialize
-		@color = Color.new(255,0,0)
+	def initialize(c = nil)
+		if c.is_a?(Color)
+			@color = c
+		else
+			@color = Color.new(0,0,0)
+		end
 	end
 
 	def to_s

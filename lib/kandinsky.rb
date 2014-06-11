@@ -1,3 +1,6 @@
 require 'kandinsky/color.rb'
 require 'kandinsky/pixel.rb'
+require 'kandinsky/brush.rb'
+require 'kandinsky/point.rb'
+require 'kandinsky/path.rb'
 require 'kandinsky/image.rb'

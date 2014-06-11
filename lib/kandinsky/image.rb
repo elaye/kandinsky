@@ -11,6 +11,11 @@ class Image
 		puts "#{@image[0].size}x#{@image.size}"
 	end
 
+	def draw(p, brush)
+		# @image[p.x][p.y] = Pixel.new(brush.color)
+		@image[p.x][p.y] = Pixel.new(Color.new(0,255,0))
+	end
+
 	def save(fn)
 		ext = fn.split('.')[-1]
 		if ext == "ppm"
