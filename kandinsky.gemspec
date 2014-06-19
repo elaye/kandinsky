@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.summary     = "Painting library"
   s.description = "A simple ruby painting gem"
   s.authors     = ["Elie Génard"]
-  s.email       = 'nick@quaran.to'
+  s.email       = ''
   s.files       = ["lib/kandinsky.rb",
                   "lib/kandinsky/color.rb",
                   "lib/kandinsky/pixel.rb",

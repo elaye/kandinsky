@@ -13,7 +13,11 @@ class Brush
 		@color = Color.new
 	end
 
-	def size
+	def width
+		@brush[0].size
+	end
+
+	def height
 		@brush.size
 	end
 

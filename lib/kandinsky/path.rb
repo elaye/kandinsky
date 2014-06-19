@@ -6,6 +6,7 @@ class Path
 		@path = a
 	end
 
+	# Bresenham's line algorithm
 	def trace
 		p0 = @path[0]
 		for i in (1...@path.size)
@@ -38,6 +39,6 @@ class Path
 			end
 
 		end
-
+		@trace
 	end
 end

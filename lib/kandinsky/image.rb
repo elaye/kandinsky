@@ -15,8 +15,16 @@ class Image
 		# !! Effets de bord
 		# for i in ([p.y - (brush.size - brush.anchor.y),0].max, [p.y + (brush.size - brush.anchor.y), @image.size].max)
 		# @image[p.x][p.y] = Pixel.new(brush.color)
-		@image[p.x][p.y] = Pixel.new(Color.new(0,255,0))
-			
+		
+		# @image[p.x][p.y] = Pixel.new(Color.new(0,255,0))
+		
+		b = brush.brush
+		for i in (0...brush.height)
+			for j in (0...brush.width)
+				@image[p.x + i][p.y + j] = Pixel.new(Color.new( b[i][j] * 255,0,0))
+			end
+		end
+
 		# end
 
 	end

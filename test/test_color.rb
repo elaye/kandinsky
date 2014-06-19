@@ -31,7 +31,7 @@ class KandinskyTest < Test::Unit::TestCase
 			Color.new(137, 6, 39).b	
 	end
 
-	def test_color_to_str
+	def test_color_to_s
 		assert_equal "[137, 6, 39]",
 			"#{Color.new(137, 6, 39)}"
 	end
